@@ -1,0 +1,43 @@
+{
+  "name": "leaflet-georaster",
+  "version": "1.0.0",
+  "description": "在 Leaflet 地图上显示 GeoTIFF 栅格数据",
+  "main": "dist/leaflet-georaster.js",
+  "module": "dist/leaflet-georaster.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/leaflet-georaster.esm.js",
+      "require": "./dist/leaflet-georaster.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "clean": "node -e \"const fs=require('fs');fs.rmSync('./dist',{recursive:true,force:true})\"",
+    "build": "node build.js"
+  },
+  "keywords": [
+    "leaflet",
+    "geotiff",
+    "georaster",
+    "gis",
+    "地图",
+    "栅格",
+    "遥感"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "georaster": "^1.6.0"
+  },
+  "peerDependencies": {
+    "leaflet": "^1.7.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0"
+  }
+}
