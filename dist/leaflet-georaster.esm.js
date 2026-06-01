@@ -1,4 +1,4 @@
-// src/georaster-layer-for-leaflet.ts
+// src/index.ts
 import * as L from "leaflet";
 var debug = (level, ...args) => {
   if (level > 0)
@@ -446,11 +446,11 @@ var GeoRasterLayer = class extends L.GridLayer {
     return this;
   }
 };
-var georaster_layer_for_leaflet_default = GeoRasterLayer;
+var src_default = GeoRasterLayer;
 if (typeof window !== "undefined") {
   window.GeoRasterLayer = GeoRasterLayer;
 }
 export {
-  georaster_layer_for_leaflet_default as default
+  src_default as default
 };
 //# sourceMappingURL=leaflet-georaster.esm.js.map

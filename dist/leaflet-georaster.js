@@ -26,12 +26,12 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 ));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// src/georaster-layer-for-leaflet.ts
-var georaster_layer_for_leaflet_exports = {};
-__export(georaster_layer_for_leaflet_exports, {
-  default: () => georaster_layer_for_leaflet_default
+// src/index.ts
+var src_exports = {};
+__export(src_exports, {
+  default: () => src_default
 });
-module.exports = __toCommonJS(georaster_layer_for_leaflet_exports);
+module.exports = __toCommonJS(src_exports);
 var L = __toESM(require("leaflet"));
 var debug = (level, ...args) => {
   if (level > 0)
@@ -479,7 +479,7 @@ var GeoRasterLayer = class extends L.GridLayer {
     return this;
   }
 };
-var georaster_layer_for_leaflet_default = GeoRasterLayer;
+var src_default = GeoRasterLayer;
 if (typeof window !== "undefined") {
   window.GeoRasterLayer = GeoRasterLayer;
 }
