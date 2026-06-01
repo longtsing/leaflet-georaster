@@ -2,6 +2,8 @@
 
 在 Leaflet 地图上显示 GeoTIFF 栅格数据
 
+> **GitHub 仓库**: https://github.com/longtsing/leaflet-georaster
+
 ## 目录
 
 - [特性](#特性)
@@ -372,17 +374,19 @@ npm run clean
 ```
 leaflet-georaster/
 ├── src/
-│   ├── georaster-layer-for-leaflet.ts  # 源码
+│   ├── index.ts            # 主源码
 │   └── types/
-│       └── index.ts                    # 类型定义
-├── dist/                               # 构建产物
-├── build.js                            # 构建脚本
+│       └── index.ts        # 类型定义
+├── dist/                   # 构建产物
+├── build.js                # 构建脚本
 ├── package.json
 ├── README.md
 └── LICENSE
 ```
 
----
+## 开发者
+
+- [longtsing](https://github.com/longtsing)
 
 ## 相关链接
 

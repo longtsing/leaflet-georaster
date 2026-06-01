@@ -29,8 +29,19 @@
     "栅格",
     "遥感"
   ],
-  "author": "",
+  "author": {
+    "name": "longtsing",
+    "url": "https://github.com/longtsing"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/longtsing/leaflet-georaster.git"
+  },
+  "bugs": {
+    "url": "https://github.com/longtsing/leaflet-georaster/issues"
+  },
+  "homepage": "https://github.com/longtsing/leaflet-georaster#readme",
   "dependencies": {
     "georaster": "^1.6.0"
   },

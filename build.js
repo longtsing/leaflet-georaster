@@ -10,7 +10,7 @@ async function build() {
 
   // Build ESM
   await esbuild.build({
-    entryPoints: ['./src/georaster-layer-for-leaflet.ts'],
+    entryPoints: ['./src/index.ts'],
     bundle: true,
     format: 'esm',
     outfile: './dist/leaflet-georaster.esm.js',
@@ -21,7 +21,7 @@ async function build() {
 
   // Build CJS
   await esbuild.build({
-    entryPoints: ['./src/georaster-layer-for-leaflet.ts'],
+    entryPoints: ['./src/index.ts'],
     bundle: true,
     format: 'cjs',
     outfile: './dist/leaflet-georaster.js',
@@ -32,7 +32,7 @@ async function build() {
 
   // Build UMD (for browser)
   await esbuild.build({
-    entryPoints: ['./src/georaster-layer-for-leaflet.ts'],
+    entryPoints: ['./src/index.ts'],
     bundle: true,
     format: 'iife',
     outfile: './dist/leaflet-georaster.min.js',
